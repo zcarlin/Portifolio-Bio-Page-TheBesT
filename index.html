@@ -17,21 +17,13 @@
             if (audio) {
                 audio.volume = 1.0;
                 audio.currentTime = 0;
-                audio.play().then(() => {
-                    console.log('🔊 Áudio iniciado pelo clique!');
-                }).catch((error) => {
-                    console.log('❌ Erro ao iniciar áudio pelo clique:', error);
-                });
-            } else {
-                console.log('❌ Elemento de áudio não encontrado na função audioPlay');
+                audio.play().then(() => {}).catch((error) => {});
             }
         }
     </script>
 </head>
 <body>
-<audio loop="" preload="auto" id="audio">
-    <!-- Source será definido pelo JavaScript -->
-</audio>
+<audio loop="" preload="auto" id="audio"></audio>
 
 <input type="checkbox" autocomplete="off" id="overlay-toggle">
 <div class="overlay fullscreen">
@@ -41,7 +33,6 @@
 </div>
 
 <video autoplay="" loop="" muted="">
-    <!-- Source será definido pelo JavaScript -->
     Seu navegador não suporta vídeo.
 </video>
 
@@ -59,45 +50,22 @@
                         <div class="badge" style="background-image: url('images/icons/Active_Developer.svg');" data-tooltip="Active Developer"></div>
                         <div class="badge" style="background-image: url('images/icons/UvqT7YVSuIzO.svg');" data-tooltip="Assinante desde 17 de maio. de 2025"></div>
                         <div class="badge" style="background-image: url('images/icons/boost1month.svg');" data-tooltip="Impulsionando o servidor desde 17 de maio. de 2025"></div>
-                          <!--  <div class="badge" style="background-image: url('images/icons/username.svg');" data-tooltip="Originalmente zCarlinTheBesT"></div> -->
                     </div>
 
                     <div class="social-buttons">
-       
-
-        <!-- Botão do Discord -->
-        <a href="https://discord.gg/ffSQTZU5cS" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-discord social-icon"></i>
-        </a>
-
-        <!-- Botão do YouTube
-        <a href="https://www.youtube.com/@thebestprkl" target="_blank" class="social-button" style="background-color: #FF0000;">
-            <i class="fab fa-youtube social-icon"></i>
-        </a> -->
-
-        <!-- Botão do Steam -->
-        <a href="https://steamcommunity.com/id/thebestcarlin/" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-steam social-icon"></i>
-        </a>
-
-        <!-- Botão do Instagram 
-          <a href="https://instagram.com/thebestprkl" target="_blank" class="social-button" style="background-color: #E4405F;"> 
-            <i class="fab fa-instagram social-icon"></i>
-        </a> -->
-
-        <!-- Botão do GitHub -->
-        <a href="https://github.com/zcarlin" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-github social-icon"></i>
-        </a> 
-
-        <!-- Botão do Spotify -->
-        <a href="https://open.spotify.com/user/31wftzxfzwvh5xvbcpse73ryfaa4" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-spotify social-icon"></i>
-        </a>
-
-    </div>
-
-
+                        <a href="https://discord.gg/ffSQTZU5cS" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-discord social-icon"></i>
+                        </a>
+                        <a href="https://steamcommunity.com/id/thebestcarlin/" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-steam social-icon"></i>
+                        </a>
+                        <a href="https://github.com/zcarlin" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-github social-icon"></i>
+                        </a> 
+                        <a href="https://open.spotify.com/user/31h3i7y2xwbhddgj74x356raf3xu?si=c1e558c592e140df" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-spotify social-icon"></i>
+                        </a>
+                    </div>
 
                     <div class="server-button">
                         <div class="server-button-text">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</div>
@@ -121,28 +89,19 @@
                     </div>
 
                     <div class="social-buttons">
-       
-        <!-- Botão do Discord -->
-        <a href="https://discord.gg/ffSQTZU5cS" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-discord social-icon"></i>
-        </a>
-
-        <!-- Botão do Steam -->
-        <a href="https://steamcommunity.com/id/thebestcarlin/" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-steam social-icon"></i>
-        </a>
-
-        <!-- Botão do GitHub -->
-        <a href="https://github.com/zcarlin" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-github social-icon"></i>
-        </a> 
-
-        <!-- Botão do Spotify -->
-        <a href="https://open.spotify.com/user/31wftzxfzwvh5xvbcpse73ryfaa4" target="_blank" class="social-button" style="background-color: #000000;">
-            <i class="fab fa-spotify social-icon"></i>
-        </a>
-
-    </div>
+                        <a href="https://discord.gg/EPsECFgzTQ" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-discord social-icon"></i>
+                        </a>
+                        <a href="https://steamcommunity.com/id/0hzk" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-steam social-icon"></i>
+                        </a>
+                        <a href="http://github.com/hypadogod" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-github social-icon"></i>
+                        </a> 
+                        <a href="https://open.spotify.com/user/31tokmkiyo4xf2htj3jd6ifhqoui?si=8a163d8a23844921" target="_blank" class="social-button" style="background-color: #000000;">
+                            <i class="fab fa-spotify social-icon"></i>
+                        </a>
+                    </div>
 
                     <div class="server-button">
                         <div class="server-button-text">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</div>
@@ -161,202 +120,101 @@
         scale: 1.02,
     });
 
-    // Função para escolher aleatoriamente entre os arquivos de mídia
     function getRandomMedia() {
         const mediaNumbers = [1, 2, 3];
         const randomNumber = mediaNumbers[Math.floor(Math.random() * mediaNumbers.length)];
-        console.log('🎲 Número aleatório gerado:', randomNumber);
         return randomNumber;
     }
 
-    // Função para testar randomização manualmente (para debug)
     function testRandomization() {
-        console.log('🧪 Testando randomização...');
         for (let i = 0; i < 10; i++) {
             const random = getRandomMedia();
-            console.log(`   Teste ${i + 1}: ${random}`);
         }
     }
 
-    // Aplicar mídia aleatória quando a página carrega
     function applyRandomMedia() {
-        console.log('🚀 Iniciando aplicação de mídia aleatória...');
-        
         try {
             const randomMedia = getRandomMedia();
-            
-            console.log('🎵 Mídia escolhida:', randomMedia);
-            console.log('📁 Arquivos que serão carregados:');
-            console.log('   - Áudio: media/' + randomMedia + '.mp3');
-            console.log('   - Vídeo: media/' + randomMedia + '.mp4');
-            
-            // Atualizar áudio
             const audioElement = document.getElementById('audio');
-            console.log('🔍 Elemento de áudio encontrado:', !!audioElement);
-            
+
             if (audioElement) {
-                // Remover source existente se houver
                 const existingAudioSource = audioElement.querySelector('source');
                 if (existingAudioSource) {
                     existingAudioSource.remove();
                 }
-                
-                // Criar novo source
+
                 const audioSource = document.createElement('source');
                 const newAudioSrc = `media/${randomMedia}.mp3`;
                 audioSource.src = newAudioSrc;
                 audioSource.type = 'audio/mpeg';
                 audioElement.appendChild(audioSource);
-                
-                console.log('📝 Novo source do áudio:', newAudioSrc);
-                
                 audioElement.load();
-                
-                // Configurar volume e loop
                 audioElement.volume = 1.0;
                 audioElement.loop = true;
-                
-                console.log('✅ Áudio atualizado com sucesso!');
-                console.log('🔊 Áudio configurado para tocar em loop');
-                
-                // Forçar a reprodução do áudio (se não estiver muted)
+
                 setTimeout(() => {
-                    audioElement.play().then(() => {
-                        console.log('🔊 Áudio iniciado com sucesso!');
-                    }).catch((error) => {
-                        console.log('❌ Erro ao iniciar áudio:', error);
-                        console.log('💡 Áudio pode estar muted ou bloqueado pelo navegador');
-                    });
+                    audioElement.play().then(() => {}).catch((error) => {});
                 }, 100);
-            } else {
-                console.log('❌ Elemento de áudio não encontrado');
             }
-            
-            // Atualizar vídeo
+
             const videoElement = document.querySelector('video');
-            console.log('🔍 Elemento de vídeo encontrado:', !!videoElement);
-            
+
             if (videoElement) {
-                // Remover source existente se houver
                 const existingVideoSource = videoElement.querySelector('source');
                 if (existingVideoSource) {
                     existingVideoSource.remove();
                 }
-                
-                // Criar novo source
+
                 const videoSource = document.createElement('source');
                 const newVideoSrc = `media/${randomMedia}.mp4`;
                 videoSource.src = newVideoSrc;
                 videoSource.type = 'video/mp4';
                 videoElement.appendChild(videoSource);
-                
-                console.log('📝 Novo source do vídeo:', newVideoSrc);
-                
                 videoElement.load();
-                
-                // Configurar autoplay, loop e muted
                 videoElement.autoplay = true;
                 videoElement.loop = true;
                 videoElement.muted = true;
-                
-                console.log('✅ Vídeo atualizado com sucesso!');
-                console.log('🎬 Vídeo configurado para autoplay em loop');
-                
-                // Forçar a reprodução do vídeo
+
                 setTimeout(() => {
-                    videoElement.play().then(() => {
-                        console.log('▶️ Vídeo iniciado com sucesso!');
-                        console.log('📺 Source atual do vídeo:', videoElement.currentSrc);
-                    }).catch((error) => {
-                        console.log('❌ Erro ao iniciar vídeo:', error);
-                    });
+                    videoElement.play().then(() => {}).catch((error) => {});
                 }, 500);
-                
-                // Adicionar eventos para monitorar o carregamento
-                videoElement.addEventListener('loadeddata', () => {
-                    console.log('📺 Vídeo carregado:', videoElement.currentSrc);
-                });
-                
-                videoElement.addEventListener('error', (e) => {
-                    console.log('❌ Erro no vídeo:', e);
-                });
-            } else {
-                console.log('❌ Elemento de vídeo não encontrado');
+
+                videoElement.addEventListener('loadeddata', () => {});
+                videoElement.addEventListener('error', (e) => {});
             }
-            
-            console.log('🎬 Mídia de fundo randomizada com sucesso!');
-            
-            // Forçar o carregamento dos elementos novamente
+
             setTimeout(() => {
-                console.log('🔄 Recarregando elementos...');
                 if (audioElement) {
                     audioElement.load();
-                    console.log('🔄 Áudio recarregado');
                 }
                 if (videoElement) {
                     videoElement.load();
-                    console.log('🔄 Vídeo recarregado');
                 }
             }, 200);
-            
-        } catch (error) {
-            console.log('❌ Erro ao aplicar mídia aleatória:', error);
-        }
+
+        } catch (error) {}
     }
 
-    // Executar quando a página estiver completamente carregada
-    console.log('📄 Estado da página:', document.readyState);
-    
     if (document.readyState === 'loading') {
-        console.log('⏳ Página ainda carregando, aguardando DOMContentLoaded...');
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('✅ DOM carregado, aplicando mídia aleatória...');
             setTimeout(applyRandomMedia, 300);
         });
     } else {
-        console.log('✅ Página já carregada, aplicando mídia aleatória...');
         setTimeout(applyRandomMedia, 300);
     }
 
-    // Adicionar função de teste ao window para debug
     window.testRandom = testRandomization;
     window.applyRandom = applyRandomMedia;
-    
-    // Função para verificar qual vídeo está sendo reproduzido
+
     window.checkVideo = function() {
         const videoElement = document.querySelector('video');
-        if (videoElement) {
-            console.log('📺 Informações do vídeo:');
-            console.log('   - Source atual:', videoElement.currentSrc);
-            console.log('   - Pausado:', videoElement.paused);
-            console.log('   - Tempo atual:', videoElement.currentTime);
-            console.log('   - Duração:', videoElement.duration);
-            console.log('   - Volume:', videoElement.volume);
-            console.log('   - Muted:', videoElement.muted);
-            console.log('   - Loop:', videoElement.loop);
-            console.log('   - Autoplay:', videoElement.autoplay);
-        } else {
-            console.log('❌ Elemento de vídeo não encontrado');
-        }
+        if (videoElement) {}
     };
-    
-    // Função para verificar o áudio
+
     window.checkAudio = function() {
         const audioElement = document.getElementById('audio');
-        if (audioElement) {
-            console.log('🔊 Informações do áudio:');
-            console.log('   - Source atual:', audioElement.currentSrc);
-            console.log('   - Pausado:', audioElement.paused);
-            console.log('   - Tempo atual:', audioElement.currentTime);
-            console.log('   - Duração:', audioElement.duration);
-            console.log('   - Volume:', audioElement.volume);
-            console.log('   - Muted:', audioElement.muted);
-            console.log('   - Loop:', audioElement.loop);
-        } else {
-            console.log('❌ Elemento de áudio não encontrado');
-        }
+        if (audioElement) {}
     };
 </script>
-
 
 </body></html>
